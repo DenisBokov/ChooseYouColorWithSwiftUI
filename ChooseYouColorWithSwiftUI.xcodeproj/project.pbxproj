@@ -12,6 +12,7 @@
 		EF37D4222C6E54230033656D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF37D4212C6E54230033656D /* Assets.xcassets */; };
 		EF37D4252C6E54230033656D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF37D4242C6E54230033656D /* Preview Assets.xcassets */; };
 		EF37D42C2C6E57A60033656D /* YourColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF37D42B2C6E57A60033656D /* YourColorView.swift */; };
+		EF37D42E2C6E6A1A0033656D /* SliderColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF37D42D2C6E6A1A0033656D /* SliderColorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		EF37D4212C6E54230033656D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF37D4242C6E54230033656D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF37D42B2C6E57A60033656D /* YourColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourColorView.swift; sourceTree = "<group>"; };
+		EF37D42D2C6E6A1A0033656D /* SliderColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderColorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				EF37D42B2C6E57A60033656D /* YourColorView.swift */,
 				EF37D4212C6E54230033656D /* Assets.xcassets */,
 				EF37D4232C6E54230033656D /* Preview Content */,
+				EF37D42D2C6E6A1A0033656D /* SliderColorView.swift */,
 			);
 			path = ChooseYouColorWithSwiftUI;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF37D4202C6E54220033656D /* ContentView.swift in Sources */,
+				EF37D42E2C6E6A1A0033656D /* SliderColorView.swift in Sources */,
 				EF37D41E2C6E54220033656D /* ChooseYouColorWithSwiftUIApp.swift in Sources */,
 				EF37D42C2C6E57A60033656D /* YourColorView.swift in Sources */,
 			);

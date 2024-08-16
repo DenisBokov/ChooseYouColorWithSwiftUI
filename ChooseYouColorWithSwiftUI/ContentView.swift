@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var redSliderColor = Double.random(in: 0...255)
-    @State private var greenSliderColor = Double.random(in: 0...255)
-    @State private var blueSliderColor = Double.random(in: 0...255)
+    @State private var redSliderColor = Double.random(in: 0...255).rounded()
+    @State private var greenSliderColor = Double.random(in: 0...255).rounded()
+    @State private var blueSliderColor = Double.random(in: 0...255).rounded()
     
     var body: some View {
         VStack {

@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct SliderColorView: View {
+    
     let foregroundColorText: Color
     
     @Binding var sliderValue: Double
     @State private var textFieldValue: String = ""
     
-    @State private var ShowAlert = false
+    @State private var showAlert = false
     
     var body: some View {
         HStack {
             Text("\(lround(sliderValue))").foregroundStyle(foregroundColorText)
                 .frame(width: 35)
             Slider(value: $sliderValue, in: 0...255, step: 1)
+                .tint(foregroundColorText)
                 .onChange(of: sliderValue) {
                     textFieldValue = "\(lround(sliderValue))"
                 }
@@ -32,7 +34,7 @@ struct SliderColorView: View {
                 .textFieldStyle(.roundedBorder)
                 .frame(width: 50)
                 .keyboardType(.decimalPad)
-                .alert("Не верный формат", isPresented: $ShowAlert, actions: {}) {
+                .alert("Не верный формат", isPresented: $showAlert, actions: {}) {
                     Text("Введите число от 0 до 255")
                 }
         }
@@ -46,7 +48,7 @@ struct SliderColorView: View {
             sliderValue = Double(value)
             return
         }
-        ShowAlert.toggle()
+        showAlert.toggle()
         sliderValue = 0
         textFieldValue = "0"
     }

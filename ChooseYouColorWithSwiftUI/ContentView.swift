@@ -16,12 +16,18 @@ struct ContentView: View {
     var body: some View {
         VStack {
             YourColorView(colorRectangle: Color(red: redSliderColor/255, green: greenSliderColor/255, blue: blueSliderColor/255))
-            SliderColorView(foregroundColorText: .red, value: $redSliderColor)
-            SliderColorView(foregroundColorText: .green, value: $greenSliderColor)
-            SliderColorView(foregroundColorText: .blue, value: $blueSliderColor)
+            VStack {
+                SliderColorView(foregroundColorText: .red, sliderValue: $redSliderColor)
+                    .frame(height: 30)
+                SliderColorView(foregroundColorText: .green, sliderValue: $greenSliderColor)
+                    .frame(height: 30)
+                SliderColorView(foregroundColorText: .blue, sliderValue: $blueSliderColor)
+                    .frame(height: 30)
+            }
+            .padding()
             Spacer()
         }
-        .padding()
+        
     }
 }
 
